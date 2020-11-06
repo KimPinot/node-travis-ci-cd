@@ -14,4 +14,9 @@ RUN yarn
 # move files
 COPY . .
 
-CMD ["yarn", "start:prod"]
+# port bind
+EXPOSE 3000
+
+RUN yarn build
+
+CMD ["yarn", "start"]
