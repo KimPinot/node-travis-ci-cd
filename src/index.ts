@@ -11,7 +11,7 @@ try {
     if (!PORT) throw new Error('NO PORT');
 
     app.use((ctx) => {
-        ctx.body = "Hello Koa! Welcome!";
+        ctx.body = "<html><head><title>KoaJS TEST</title></head><body><h1>Hello Koa!</h1></body></html>";
     })
 
     app.listen(PORT, () => {
