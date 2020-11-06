@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/docker/deploy/node-travis-ci-cd
+    destination: /home/ubuntu/docker/deploy/images/node-travis-ci-cd
 hooks:
   AfterInstall:
     - location: deploy.sh
