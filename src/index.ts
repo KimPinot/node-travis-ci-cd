@@ -11,7 +11,7 @@ try {
     if (!PORT) throw new Error('NO PORT');
 
     app.use((ctx) => {
-        ctx.body = "Hello Koa!";
+        ctx.body = "Hello Koa! Welcome!";
     })
 
     app.listen(PORT, () => {
