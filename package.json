@@ -1,0 +1,27 @@
+{
+  "name": "node-travis-ci-cd",
+  "version": "1.0.0",
+  "description": "node-js app with travis",
+  "main": "src/index.ts",
+  "repository": "https://github.com/KimPinot/node-travis-ci-cd.git",
+  "author": "Pinot. Kim. <pinot.kim@kakao.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --watch src/index.ts",
+    "build": "npx tsc",
+    "start": "nodemon dist/index.js",
+    "test": "exit"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.6",
+    "@types/node": "^14.14.6",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
