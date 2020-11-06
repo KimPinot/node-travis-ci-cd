@@ -11,6 +11,7 @@
     "dev": "nodemon --watch src/index.ts",
     "build": "npx tsc",
     "start": "nodemon dist/index.js",
+    "start:prod": "yarn && npx tsc && nodemon dist/index.js",
     "test": "exit"
   },
   "dependencies": {

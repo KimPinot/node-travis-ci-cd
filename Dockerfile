@@ -14,4 +14,4 @@ RUN yarn
 # move files
 COPY . .
 
-CMD ["yarn", "&&", "yarn", "start"]
+CMD ["yarn", "start:prod"]
